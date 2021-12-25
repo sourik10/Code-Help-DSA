@@ -6,7 +6,7 @@ int fastExpo(int a,int b){
 	int res=1;
 
 	if(b==0) {
-		return a;
+		return res;
 	}
 	while(b>0){
 		if(b%2){
