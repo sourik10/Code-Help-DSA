@@ -1,5 +1,7 @@
 //https://www.codingninjas.com/codestudio/problems/replace-spaces_1172172?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_5&leftPanelTab=0
 
+
+// Extra Space 
 string replaceSpaces(string &str){
 	string ans;
     for(int i=0;i<str.length();i++){
@@ -10,4 +12,18 @@ string replaceSpaces(string &str){
         }
         else ans.push_back(str[i]);
     }return ans;
+}
+
+
+//Constant Space 
+string replaceSpaces(string &str){
+	//string ans;
+    for(int i=0;i<str.length();i++){
+        if(str[i]==' '){
+           str.insert(i,"@40");
+            i=i+3;
+            str.erase(i,1);
+        }
+        
+    }return str;
 }
