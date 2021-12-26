@@ -1,0 +1,8 @@
+//functions
+
+length of a string (s)--->  strlen(s)  or s.length()
+comapre string a,b--->strcmp(a,b)
+copy ---->strcpy(destination,source)
+
+
+                       
