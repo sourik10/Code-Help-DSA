@@ -1,6 +1,8 @@
 //quickSort Algorithm
 //time = O(nlogn)
 //space = O(1)
+//taking first element as pivot 
+//divide and conquer strategy
 
 #include<iostream>
 using namespace std;
@@ -39,9 +41,9 @@ int partition(vector<int>&ar,int s,int e){
 void quickSort(vector<int>&ar,int s,int e){
     if(s>=e) return;
     
-    int p=partition(ar,s,e);
-    quickSort(ar,s,p-1);
-    quickSort(ar,p+1,e);
+    int p=partition(ar,s,e); 
+    quickSort(ar,s,p-1); //left subarray
+    quickSort(ar,p+1,e); //right subaray
 }
 
 
