@@ -34,7 +34,7 @@ bool detectLoop(Node* head){
 
 
 //approach 3 ---Floyd’s Cycle-Finding Algorithm (two pointer)
-//time O(n) , space O(n)
+//time O(n) , space O(1)
 
 bool detectLoop(Node* head){
     Node* slow=head;
