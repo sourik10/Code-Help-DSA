@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//implement stack using array (push/pop/peek/empty operations)
+
 class Stack{
     public:
     //data members 
