@@ -1,16 +1,14 @@
-void solve(stack<int> &s,int x){
-    
-    //base case
-    if(s.empty()){
-        s.push(x);
-        return;
+void solve(stack<int>&myStack,int x){
+    if(myStack.empty()){
+        myStack.push(x);
+        	return;
     }
-    int t=s.top();
-    s.pop();
-    solve(s,x); //recurisve case
     
-    //backtracking
-    s.push(t);
+    int top=myStack.top();
+    myStack.pop();
+    solve(myStack,x);
+    myStack.push(top);
+    
 }
 stack<int> pushAtBottom(stack<int>& myStack, int x) {
     solve(myStack,x);
