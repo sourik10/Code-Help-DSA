@@ -1,13 +1,14 @@
-void deleteMiddle(stack<int>&s,int count,int size){
-    //base case
-    if(count==size/2){
-       s.pop();
+void solve(stack<int>&st,int ct,int N){
+    if(ct==N/2){
+        st.pop();
         return;
     }
-  
-    int t=s.top();
-    s.pop();
-    count++;
-    solve(s,count,size); //recursive case
-    s.push(t);
+    int t=st.top();
+    st.pop();
+    solve(st,ct+1,N);
+    st.push(t);
+}
+void deleteMiddle(stack<int>&inputStack, int N){
+    int ct=0;
+    solve(inputStack,ct,N);
 }
