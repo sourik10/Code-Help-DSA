@@ -1,21 +1,20 @@
 #include<bits/stdc++.h>
-#define ll              long long int 
-#define ull             unsigned long long
-#define fastread()      (ios_base:: sync_with_stdio(false),cin.tie(NULL));
 using namespace std;
 
 int main(){
-    fastread();
+
     
-    string q="ronaldo";
-    stack<char>s;
-    for(int i=0;i<q.length();i++){
-        s.push(q[i]);
-    }
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    
 
-    while(!s.empty()){
-        cout<<s.top()<<",";
-        s.pop();
+   string str; cin>>str;
+   stack<char>ch;
+   for(int i=0;i<str.length();i++){
+       ch.push(str[i]);
+   }
+    while(!ch.empty()){
+        cout<<ch.top()<<" ";
+        ch.pop();
     }
-
 }
