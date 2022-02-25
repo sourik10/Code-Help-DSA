@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/implementation-deque-using-circular-array/
 class Deque
 {	int rear,front;
  	int *ar;
